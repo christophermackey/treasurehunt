@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="treasurehunt.css">
+    <title>Dogs vs Cats</title>
+    <link rel="shortcut icon" type="image/png" href="./boughton-square-favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="upperSection">
+      <h1 id="top">Find the Dog</h1>
+​
+      <h2>Dogs vs Cats</h2>
+​
+      <img id="image" src="https://i.pinimg.com/564x/ec/74/99/ec7499fb07e5b66aba88f4a425504b4a.jpg" alt="dog hiding from cat" height="250px">
+​   </div>
+
+    <br>
+
+    <div class="rules">
+      <ul>
+        <li>Click the boxes to reveal what's in the farm</li>
+        <li>If you click on the cat, you lose</li>
+        <li>If you click on the dog, you win</li>
+      </ul>
+    </div>
+
+    <br>
+
+    <div class="gameBoard">
+      <div class="loader"></div>
+      <table border="1">
+        <tr>
+          <td id=0 onClick="treasure(0)">?</td>
+          <td id=1 onClick="treasure(1)">?</td>
+          <td id=2 onClick="treasure(2)">?</td>
+          <td id=3 onClick="treasure(3)">?</td>
+        </tr>
+        <tr>
+          <td id=4 onClick="treasure(4)">?</td>
+          <td id=5 onClick="treasure(5)">?</td>
+          <td id=6 onClick="treasure(6)">?</td>
+          <td id=7 onClick="treasure(7)">?</td>
+        </tr>
+        <tr>
+          <td id=8 onClick="treasure(8)">?</td>
+          <td id=9 onClick="treasure(9)">?</td>
+          <td id=10 onClick="treasure(10)">?</td>
+          <td id=11 onClick="treasure(11)">?</td>
+        </tr>
+        <tr>
+          <td id=12 onClick="treasure(12)">?</td>
+          <td id=13 onClick="treasure(13)">?</td>
+          <td id=14 onClick="treasure(14)">?</td>
+          <td id=15 onClick="treasure(15)">?</td>
+        </tr>
+      </table>
+​    </div>
+
+      <br>
+
+    <div class="lowerSection">
+      <button type="button" name="button" onClick="location.reload()">Restart Game</button>
+
+      <h2>Turns Left: <a id="counter">6</a></h2>
+    </div>
+
+    <div class="footer">
+      <footer>
+        <p>
+          Conrad Harper, Christopher Mackey
+          <a href="https://www.aspca.org/" target="_blank">aspca.org</a>
+        </p>
+        <a href="#top">Back to top</a>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="treasurehunt.js"></script>
+  </body>
+</html>

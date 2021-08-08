@@ -1,0 +1,115 @@
+body {
+  background-image: url("farm.jpg");
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rules {
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  background-color: rgb(100, 149, 237, .6);
+  margin: auto;
+  width: 50%;
+  border-radius: 25px;
+}
+
+.rules:hover {
+  color: black;
+}
+
+#image {
+  border-radius: 10px;
+}
+
+.gameBoard {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.upperSection {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+}
+
+.lowerSection {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.footer {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+td {
+  color: green;
+  border: 2px solid white;
+  height:150px;
+  width:150px;
+  font-size: 100px;
+}
+
+td:hover {
+  background-color: rgb(100, 149, 237, .6);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+button {
+  background-color: rgb(100, 149, 237);
+  font-family: 'Press Start 2P',  cursive;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 15px;
+}
+
+button:hover {
+  color: red;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation:
+    spin 2s linear infinite,
+    fullOpacity 2s;
+  animation-iteration-count: 1;
+  opacity: 0%;
+  position: absolute;
+  left: auto;
+  top: 37%;
+  z-index: 1;
+}
+
+@keyframes fullOpacity {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
